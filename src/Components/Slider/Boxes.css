@@ -1,0 +1,14 @@
+.boxes {
+    margin: 20px;
+    margin-top:50px;
+    background-color: rgb(67, 173, 168);
+    overflow: hidden;
+    height: 150px;
+    max-height: 35vh;
+    border-radius:4px;
+}
+
+.grids {
+    max-width: 70%;
+    margin: auto;
+}

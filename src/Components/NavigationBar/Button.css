@@ -1,0 +1,11 @@
+.field {
+    width: 20%;
+    height: 45px;
+    position: sticky;
+    background-color: #fff;
+    transition: 0.3s all ease-out;
+    margin: 10px;
+  }
+  .field:hover {
+    background-color: #fff;
+  }
