@@ -9,11 +9,18 @@ class MenuItems extends React.Component{
   render(){
   return (
     <Router>
-    <NavLink activeStyle = {{color: 'black'}} exact to = "/gundem">Gündem</NavLink> <br></br>
-    <NavLink activeStyle = {{color: 'black'}} exact to = "/ekonomi">Ekonomi</NavLink> <br></br>
-    <NavLink activeStyle = {{color: 'black'}} exact to = "/dunya">Dünya</NavLink> <br></br>
-    <NavLink activeStyle = {{color: 'black'}} exact to = "/spor">Spor</NavLink> <br></br>
-    <NavLink activeStyle = {{color: 'black'}} exact to = "/magazin">Magazin</NavLink> <br></br>
+    <div className="nav-menu">
+    <NavLink 
+    className="navbar__link" exact to = "/gundem">Gündem</NavLink> 
+    <NavLink 
+    className="navbar__link" exact to = "/ekonomi">Ekonomi</NavLink> 
+    <NavLink 
+    className="navbar__link" exact to = "/dunya">Dünya</NavLink> 
+    <NavLink 
+    className="navbar__link" exact to = "/spor">Spor</NavLink> 
+    <NavLink 
+    className="navbar__link" exact to = "/magazin">Magazin</NavLink> 
+    </div>
     <div>
     <br></br>
       <Switch>

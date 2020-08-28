@@ -9,7 +9,7 @@ import Button from './Button'
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">HBR <i className="fab fa-galactic-republic"></i></h1>
                
-                  <MenuItems className = "nav-menu"></MenuItems>
+                  <MenuItems></MenuItems>
                 <Button/>
             </nav>
         )

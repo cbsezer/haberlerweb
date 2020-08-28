@@ -1,5 +1,5 @@
 .NavbarItems{
-    background-color:rgb(235, 53, 90) ;
+    background-color:#b30404 ;
     height:100px;
     display: flex;
     justify-content: center;
@@ -8,19 +8,49 @@
 }
 
 .navbar-logo {
-    color: #ffffff;
+    color:#f9f9f9;
     justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
 }
-
 .nav-menu{
-    display:grid;
-    grid-template-columns: repeat(5,auto); 
-    grid-gap:10 px;
-    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap:10px;
+    width: 45vw;
     text-align: center;
-    width: 60vw;
-    justify-content: end;
+    list-style: none;
     margin-right: 2rem;
+    justify-content: end;
+    list-style: none;
+    text-decoration: none
+  }
+  .navbar__link {
+    font-family: 'Do Hyeon', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar__link:hover {
+background-color: rgb(38, 87, 161);
+text-decoration: none;
+color:white;
+border-radius: 4px;
+transition: all 0.2s ease-out;  }
+.container{
+    background-color: #f9f9f9;
+    overflow: hidden;
+    height: 30px;
+    width: 200px;
+    border-radius:4px;
+    margin-right:5px;
+}  
+
+.container:hover{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    height: 40px;
+    width: 300px;
+
+    border-radius:4px;
 }

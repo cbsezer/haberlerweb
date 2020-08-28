@@ -11,6 +11,7 @@ function App() {
     <br></br>
     <Slider></Slider>
     <Scroll></Scroll>
+    
     </div>
   );
 }

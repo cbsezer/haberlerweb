@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Carousel from 'react-elastic-carousel';
  
 class Slider extends Component {
+  
   state = {
     items: [
       {id: 1, title: <img src= {require('./assets/haber1.jpg')} alt="logo" width="861.59px" height="491.5px"></img> },
@@ -14,9 +15,11 @@ class Slider extends Component {
   render () {
     const { items } = this.state;
     return (
-      <Carousel>
-        {items.map(item => <div key={item.id}>{item.title}</div>)}
-      </Carousel>
+     <div className="card">
+     <Carousel>
+     {items.map(item => <div key={item.id}>{item.title}</div>)}
+   </Carousel>
+     </div>
     )
   }
 }
