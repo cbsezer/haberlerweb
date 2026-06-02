@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Navbar from './components/NavBar/Navbar';
+import Navbar from './Components/NavBar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Anasayfa from './components/pages/Anasayfa'
-import Ekonomi from './components/pages/Ekonomi'
-import Magazin from './components/pages/Magazin'
-import Spor from './components/pages/Spor'
-import Dunya from './components/pages/Dunya'
-import Gundem from './components/pages/Gundem'
-import Detay from './components/pages/Detay'
+import Anasayfa from './Components/pages/Anasayfa'
+import Ekonomi from './Components/pages/Ekonomi'
+import Magazin from './Components/pages/Magazin'
+import Spor from './Components/pages/Spor'
+import Dunya from './Components/pages/Dunya'
+import Gundem from './Components/pages/Gundem'
+import Detay from './Components/pages/Detay'
 
 const Deneme = () => {
   return <div className="container"></div>;
