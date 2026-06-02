@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 import './Navbar.css';
+import logo from '../assets/hbr-news-logo.svg';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -27,7 +28,7 @@ function Navbar() {
             <span></span>
           </button>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            HBR NEWS
+            <img src={logo} alt="HBR News" />
           </Link>
 
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>

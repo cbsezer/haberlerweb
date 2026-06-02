@@ -80,14 +80,16 @@
 }
 
 .navbar-logo {
-  color: #111;
   cursor: pointer;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: -0.2px;
+  display: inline-flex;
+  height: 40px;
   text-decoration: none;
-  white-space: nowrap;
+}
+
+.navbar-logo img {
+  display: block;
+  height: 40px;
+  width: auto;
 }
 
 .nav-menu {
