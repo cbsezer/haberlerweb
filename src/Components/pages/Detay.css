@@ -10,10 +10,11 @@
   align-items: start;
   display: grid;
   gap: 24px;
-  grid-template-columns: minmax(0, 2fr) minmax(300px, 0.95fr);
+  grid-template-columns: minmax(0, 2.2fr) minmax(320px, 0.8fr);
   margin: 0 auto;
-  max-width: 1180px;
-  padding: 64px 20px 72px;
+  max-width: none;
+  padding: 64px clamp(16px, 3vw, 56px) 72px;
+  width: 100%;
 }
 
 .detail-article {
@@ -406,7 +407,7 @@
   justify-content: space-between;
   gap: 32px;
   margin-top: 24px;
-  padding: 48px max(20px, calc((100vw - 1180px) / 2 + 20px));
+  padding: 48px clamp(16px, 3vw, 56px);
   text-align: left;
 }
 

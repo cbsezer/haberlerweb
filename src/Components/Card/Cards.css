@@ -10,8 +10,8 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1120px;
-    width: 90%;
+    max-width: none;
+    width: 100%;
     margin: 0 auto;
   }
   
