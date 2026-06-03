@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Ekonomi.css';
+import NewsCard from '../common/NewsCard';
+import SiteFooter from '../common/SiteFooter';
 
 import economyImage from '../assets/generated/news-economy.png';
 import energyImage from '../assets/generated/news-energy.png';
@@ -131,29 +133,29 @@ function Ekonomi() {
 
         <div className="economy-news-grid">
           {news.map((item) => (
-            <Link className="economy-news-card" to="/dolar-kuru-bugun-ne-kadar" key={item.title}>
-              <img src={item.image} alt={item.title} />
-              <span>{item.category}</span>
-              <h3>{item.title}</h3>
-              <p>{item.summary}</p>
-              <small>{item.author} · {item.time}</small>
-            </Link>
+            <NewsCard
+              item={item}
+              key={item.title}
+              showAuthor
+              to="/dolar-kuru-bugun-ne-kadar"
+              variant="economy"
+            />
           ))}
         </div>
 
         <button className="load-more-economy" type="button">Daha Fazla Haber Yükle</button>
       </section>
 
-      <footer className="economy-footer">
-        <h2>HBR NEWS</h2>
-        <nav>
-          <Link to="/">Hakkımızda</Link>
-          <Link to="/">İletişim</Link>
-          <Link to="/">Gizlilik Politikası</Link>
-          <Link to="/">Kullanım Şartları</Link>
-        </nav>
-        <p>© 2024 HBR News Portal. Tüm hakları saklıdır.</p>
-      </footer>
+      <SiteFooter
+        className="economy-footer"
+        copyright="© 2024 HBR News Portal. Tüm hakları saklıdır."
+        links={[
+          { label: 'Hakkımızda' },
+          { label: 'İletişim' },
+          { label: 'Gizlilik Politikası' },
+          { label: 'Kullanım Şartları' },
+        ]}
+      />
     </main>
   );
 }

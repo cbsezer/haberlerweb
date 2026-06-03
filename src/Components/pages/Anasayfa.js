@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Anasayfa.css';
+import NewsCard from '../common/NewsCard';
+import PopularList from '../common/PopularList';
+import SectionHeading from '../common/SectionHeading';
 
 import heroPort from '../assets/generated/home-hero-port.png';
 import economyImage from '../assets/generated/news-economy.png';
@@ -163,44 +166,22 @@ function Anasayfa() {
 
         <section className="home-grid">
           <div className="latest-section">
-            <div className="section-heading">
-              <h2>Son Haberler</h2>
-              <Link to="/gundem">Tümünü Gör</Link>
-            </div>
+            <SectionHeading title="Son Haberler" linkText="Tümünü Gör" linkTo="/gundem" />
 
             <div className="latest-grid">
               {latestNews.map((item) => (
-                <Link
-                  className={item.featured ? 'latest-card latest-card--featured' : 'latest-card'}
-                  to={item.path}
+                <NewsCard
+                  item={item}
+                  featured={item.featured}
                   key={item.title}
-                >
-                  <div className="latest-card__image">
-                    <img src={item.image} alt={item.title} />
-                    <span>{item.category}</span>
-                  </div>
-                  <div className="latest-card__body">
-                    <h3>{item.title}</h3>
-                    {item.summary && <p>{item.summary}</p>}
-                    <small>{item.time}</small>
-                  </div>
-                </Link>
+                  showSummary={Boolean(item.summary)}
+                  variant="latest"
+                />
               ))}
             </div>
           </div>
 
-          <aside className="most-read">
-            <h2>En Çok Okunanlar</h2>
-            {mostRead.map((item, index) => (
-              <Link className="most-read__item" to={item.path} key={item.title}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <div>
-                  <h3>{item.title}</h3>
-                  <small>{item.category}</small>
-                </div>
-              </Link>
-            ))}
-          </aside>
+          <PopularList items={mostRead} />
         </section>
 
         <section className="wide-story">

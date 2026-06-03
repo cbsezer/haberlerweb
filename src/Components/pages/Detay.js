@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Detay.css';
+import NewsCard from '../common/NewsCard';
+import NewsletterWidget from '../common/NewsletterWidget';
+import PopularList from '../common/PopularList';
+import SiteFooter from '../common/SiteFooter';
 
 import detailImage from '../assets/generated/detail-beirut-port.png';
 import diplomacyImage from '../assets/generated/detail-diplomacy.png';
@@ -114,36 +118,22 @@ function Detay() {
             <h2>İlgini Çekebilir</h2>
             <div className="related-grid">
               {relatedNews.map((item) => (
-                <Link className="related-card" to="/gundem" key={item.title}>
-                  <img src={item.image} alt={item.title} />
-                  <span>{item.category}</span>
-                  <h3>{item.title}</h3>
-                </Link>
+                <NewsCard item={item} key={item.title} to="/gundem" variant="related" />
               ))}
             </div>
           </section>
         </article>
 
         <aside className="detail-sidebar">
-          <section className="detail-widget popular-widget">
-            <h2>En Çok Okunanlar</h2>
-            {popularNews.map((item, index) => (
-              <Link className="popular-item" to="/gundem" key={item.title}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <div>
-                  <h3>{item.title}</h3>
-                  <small>{item.time}</small>
-                </div>
-              </Link>
-            ))}
-          </section>
+          <PopularList
+            className="detail-widget popular-widget"
+            itemClassName="popular-item"
+            items={popularNews}
+            metaKey="time"
+            to="/gundem"
+          />
 
-          <section className="newsletter-widget">
-            <h2>Haber Bülteni</h2>
-            <p>En önemli haberleri her sabah e-posta adresinize gönderiyoruz.</p>
-            <input type="email" placeholder="E-posta adresiniz" aria-label="E-posta adresiniz" />
-            <button type="button">Kayıt Ol</button>
-          </section>
+          <NewsletterWidget />
 
           <Link className="live-card" to="/">
             <img src={worldImage} alt="HBR TV canlı yayın stüdyosu" />
@@ -156,17 +146,15 @@ function Detay() {
         </aside>
       </div>
 
-      <footer className="detail-footer">
-        <div>
-          <h2>HBR NEWS</h2>
-          <p>Dünyadan ve Türkiye’den en güncel haberler, analizler ve özel dosyalarla haberin merkezindeyiz.</p>
-        </div>
-        <nav>
-          <Link to="/">Kurumsal</Link>
-          <Link to="/">Yasal</Link>
-          <Link to="/">Sosyal</Link>
-        </nav>
-      </footer>
+      <SiteFooter
+        className="detail-footer"
+        description="Dünyadan ve Türkiye’den en güncel haberler, analizler ve özel dosyalarla haberin merkezindeyiz."
+        links={[
+          { label: 'Kurumsal' },
+          { label: 'Yasal' },
+          { label: 'Sosyal' },
+        ]}
+      />
     </main>
   );
 }
