@@ -1,16 +1,12 @@
 import React from 'react';
 import CardItem from '../Card/CardItem'
 import '../Card/Cards.css'
+import designTokens from '../../styles/designTokens';
 
 function Magazin() {
   const mystyle = {
-    margin: "0",
-    color: "white",
-    fontFamily: 'Lobster',
-    fontSize: 70,
-    fontWeight: 'italic',
-    textAlign: "center",
-    backgroundImage: "linear-gradient(to right, #b10088, #f374e8)"
+    ...designTokens.categoryHeader,
+    backgroundImage: designTokens.categoryGradients.magazine,
   };
   return (
     <div>

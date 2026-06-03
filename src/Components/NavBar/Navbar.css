@@ -1,7 +1,7 @@
 .breaking-news-bar {
-  background: #d00210;
-  color: #fff;
-  font-family: Inter, Arial, sans-serif;
+  background: var(--color-brand);
+  color: var(--color-surface);
+  font-family: var(--font-sans);
   overflow: hidden;
   padding: 8px 0;
   white-space: nowrap;
@@ -11,18 +11,18 @@
   align-items: center;
   animation: navbarTicker 32s linear infinite;
   display: inline-flex;
-  gap: 24px;
+  gap: var(--space-grid);
   min-width: 100%;
 }
 
 .breaking-news-track strong {
-  font-size: 11px;
+  font-size: var(--text-label);
   letter-spacing: 1.4px;
   margin-left: 16px;
 }
 
 .breaking-news-track span {
-  font-size: 12px;
+  font-size: var(--text-caption);
 }
 
 .market-ticker-item {
@@ -33,7 +33,7 @@
 }
 
 .market-ticker-item strong {
-  font-size: 11px;
+  font-size: var(--text-label);
   letter-spacing: 0.8px;
   margin-left: 0;
   opacity: 0.82;
@@ -41,21 +41,21 @@
 }
 
 .market-ticker-item b {
-  font-size: 15px;
+  font-size: var(--text-body-sm);
 }
 
 .market-ticker-item em {
-  font-size: 11px;
+  font-size: var(--text-label);
   font-style: normal;
   font-weight: 800;
 }
 
 .market-ticker-item .up {
-  color: #5cff8d;
+  color: var(--color-success);
 }
 
 .market-ticker-item .down {
-  color: #ffb4b4;
+  color: var(--color-danger-soft);
 }
 
 @keyframes navbarTicker {
@@ -69,10 +69,10 @@
 
 .navbar {
   align-items: center;
-  background: #fff;
-  border-bottom: 1px solid #d8d8d8;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
   display: flex;
-  font-family: Inter, Arial, sans-serif;
+  font-family: var(--font-sans);
   height: 52px;
   justify-content: center;
   position: sticky;
@@ -83,11 +83,11 @@
 .navbar-container {
   align-items: center;
   display: grid;
-  gap: 24px;
+  gap: var(--space-grid);
   grid-template-columns: auto auto 1fr auto;
   height: 52px;
   max-width: none;
-  padding: 0 clamp(16px, 3vw, 56px);
+  padding: 0 var(--space-page-x);
   width: 100%;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .navbar-menu-button span {
-  background: #111;
+  background: var(--color-text);
   display: block;
   height: 1px;
   width: 13px;
@@ -140,9 +140,9 @@
 }
 
 .nav-links {
-  color: #111;
+  color: var(--color-text);
   display: inline-flex;
-  font-size: 10px;
+  font-size: var(--text-nav);
   font-weight: 700;
   letter-spacing: 0.9px;
   line-height: 52px;
@@ -151,11 +151,11 @@
 
 .nav-links:hover,
 .nav-links.active {
-  color: #d00210;
+  color: var(--color-brand);
 }
 
 .nav-links.active {
-  border-bottom: 2px solid #d00210;
+  border-bottom: 2px solid var(--color-brand);
 }
 
 .navbar-actions {
@@ -167,20 +167,20 @@
 .navbar-search {
   background: transparent;
   border: 0;
-  color: #111;
+  color: var(--color-text);
   cursor: pointer;
-  font-size: 20px;
+  font-size: var(--text-card-title);
   line-height: 1;
   padding: 0;
 }
 
 .navbar-subscribe {
-  background: #000;
+  background: var(--color-text-strong);
   border: 0;
-  border-radius: 999px;
-  color: #fff;
+  border-radius: var(--radius-pill);
+  color: var(--color-surface);
   cursor: pointer;
-  font-size: 10px;
+  font-size: var(--text-nav);
   font-weight: 800;
   letter-spacing: 0.8px;
   padding: 8px 16px;

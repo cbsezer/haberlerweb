@@ -1,16 +1,12 @@
 import React from 'react';
 import CardItem from '../Card/CardItem'
 import '../Card/Cards.css'
+import designTokens from '../../styles/designTokens';
 
 function Spor() {
   const mystyle = {
-    margin: "0",
-    color: "white",
-    fontFamily: 'Lobster',
-    fontSize: 70,
-    fontWeight: 'italic',
-    textAlign: "center",
-    backgroundImage: "linear-gradient(to right, #3c9987, #1cc9a7)"
+    ...designTokens.categoryHeader,
+    backgroundImage: designTokens.categoryGradients.sports,
   };
   return (
     <div>

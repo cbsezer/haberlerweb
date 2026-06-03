@@ -1,16 +1,12 @@
 import React from 'react';
 import CardItem from '../Card/CardItem'
 import '../Card/Cards.css'
+import designTokens from '../../styles/designTokens';
 
 function Dunya() {
   const mystyle = {
-    color: "white",
-    margin: "0",
-    fontFamily: 'Lobster',
-    fontSize: 70,
-    fontWeight: 'italic',
-    textAlign: "center",
-    backgroundImage: "linear-gradient(to right, #4880EC, #019CAD)"
+    ...designTokens.categoryHeader,
+    backgroundImage: designTokens.categoryGradients.world,
   };
   return (
     <div>

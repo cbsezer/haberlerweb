@@ -1,5 +1,5 @@
 .cards {
-    background: #fff;
+    background: var(--color-surface);
   }
   
   h1 {
@@ -21,14 +21,14 @@
   }
   
   .cards__items {
-    margin-bottom: 24px;
+    margin-bottom: var(--space-grid);
   }
   
   .cards__item {
     display: flex;
     flex: 1;
     margin: 0 1rem;
-    border-radius: 10px;
+    border-radius: var(--radius-xl);
   }
   
   .cards__item__link {
@@ -38,7 +38,7 @@
     box-shadow: 0 6px 20px rgba(42, 54, 77, 0.17);
     -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
     filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    border-radius: 10px;
+    border-radius: var(--radius-xl);
     overflow: hidden;
     text-decoration: none;
   }
@@ -65,10 +65,10 @@
     margin-left: 10px;
     padding: 6px 8px;
     max-width: calc((100%) - 60px);
-    font-size: 12px;
+    font-size: var(--text-caption);
     font-weight: 700;
-    color: #fff;
-    background-color: #1f98f4;
+    color: var(--color-surface);
+    background-color: var(--color-card-link);
     box-sizing: border-box;
   }
   
@@ -96,8 +96,8 @@
   }
   
   .cards__item__text {
-    color: #252e48;
-    font-size: 18px;
+    color: var(--color-card-title);
+    font-size: var(--text-body-lg);
     line-height: 24px;
   }
   

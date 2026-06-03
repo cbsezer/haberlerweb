@@ -1,0 +1,76 @@
+:root {
+  --font-sans: Inter, Arial, sans-serif;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  --color-page: #f7f7f7;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eeeeee;
+  --color-surface-soft: #f4f4f4;
+  --color-footer: #e2e2e2;
+  --color-text: #111111;
+  --color-text-strong: #000000;
+  --color-text-detail: #1a1c1c;
+  --color-text-article: #2b2b2b;
+  --color-text-soft: #555555;
+  --color-text-subtle: #666666;
+  --color-text-muted: #76777b;
+  --color-text-faint: #b7b7b7;
+  --color-text-pale: #c9c9c9;
+  --color-border: #d7d7d7;
+  --color-border-muted: #d2d2d2;
+  --color-border-strong: #cfcfcf;
+  --color-brand: #d00210;
+  --color-brand-dark: #bb000f;
+  --color-dark: #000000;
+  --color-dark-soft: #1c1c1c;
+  --color-ink: #171717;
+  --color-card-link: #1f98f4;
+  --color-card-title: #252e48;
+  --color-success: #5cff8d;
+  --color-danger-soft: #ffb4b4;
+
+  --space-page-x: clamp(16px, 3vw, 56px);
+  --space-page-y: 64px;
+  --space-grid: 24px;
+  --space-section: 64px;
+
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-card-tag: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 10px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 8px 28px rgba(0, 0, 0, 0.06);
+  --shadow-image: 0 12px 28px rgba(0, 0, 0, 0.12);
+  --shadow-hero: 0 14px 28px rgba(0, 0, 0, 0.16);
+
+  --text-nav: 10px;
+  --text-label: 11px;
+  --text-caption: 12px;
+  --text-small: 13px;
+  --text-body-xs: 14px;
+  --text-widget-title: 24px;
+  --text-body-sm: 15px;
+  --text-body: 16px;
+  --text-body-md: 17px;
+  --text-body-lg: 18px;
+  --text-card-title: 20px;
+  --text-related-title: 23px;
+  --text-story-title: 25px;
+  --text-side-title: 26px;
+  --text-metric: 27px;
+  --text-rank: 28px;
+  --text-section-title: 30px;
+  --text-wide-title: 34px;
+  --text-news-title: 36px;
+  --text-footer-title: 22px;
+  --text-page-title: clamp(42px, 5vw, 58px);
+  --text-hero-title: clamp(34px, 4vw, 48px);
+  --text-detail-title: clamp(36px, 4.4vw, 52px);
+
+  --layout-main-sidebar: minmax(0, 2.2fr) minmax(320px, 0.8fr);
+  --layout-economy-hero: minmax(0, 2fr) minmax(320px, 0.95fr);
+}
