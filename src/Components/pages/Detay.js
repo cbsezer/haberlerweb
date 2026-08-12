@@ -136,10 +136,10 @@ function Detay() {
           <NewsletterWidget />
 
           <Link className="live-card" to="/">
-            <img src={worldImage} alt="HBR TV canlı yayın stüdyosu" />
+            <img src={worldImage} alt="Nabız TV canlı yayın stüdyosu" />
             <div>
               <span>Canlı Yayın</span>
-              <h2>HBR TV Canlı İzle</h2>
+              <h2>Nabız TV Canlı İzle</h2>
               <p>Kesintisiz ve tarafsız haberin adresi.</p>
             </div>
           </Link>

@@ -1,0 +1,10 @@
+<svg width="184" height="44" viewBox="0 0 184 44" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Nabız Logo</title>
+  <desc id="desc">Nabız haber markası ve Haberin Nabzı sloganı.</desc>
+  <rect x="1" y="2" width="40" height="40" rx="10" fill="#111111"/>
+  <path d="M10 27H15.5L18.4 15L23.3 32L27.2 22H32.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 17L35.6 12.4" stroke="#D00210" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M34.6 9.2C39.4 13.7 39.4 21.3 34.6 25.8" stroke="#D00210" stroke-width="2" stroke-linecap="round"/>
+  <text x="52" y="22" fill="#111111" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="700">Nabız</text>
+  <text x="54" y="36" fill="#D00210" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="800" letter-spacing="1.2">HABERİN NABZI</text>
+</svg>

@@ -115,13 +115,13 @@
 .navbar-logo {
   cursor: pointer;
   display: inline-flex;
-  height: 40px;
+  height: 44px;
   text-decoration: none;
 }
 
 .navbar-logo img {
   display: block;
-  height: 40px;
+  height: 44px;
   width: auto;
 }
 

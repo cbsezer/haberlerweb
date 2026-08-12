@@ -1,9 +1,9 @@
 {
-  "short_name": "HBR News",
-  "name": "HBR News",
+  "short_name": "Nabız",
+  "name": "Nabız | Haberin Nabzı",
   "icons": [
     {
-      "src": "hbr-news-icon.svg",
+      "src": "nabiz-icon.svg",
       "sizes": "192x192",
       "type": "image/svg+xml"
     }

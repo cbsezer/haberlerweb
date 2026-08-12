@@ -148,7 +148,7 @@ function Ekonomi() {
 
       <SiteFooter
         className="economy-footer"
-        copyright="© 2024 HBR News Portal. Tüm hakları saklıdır."
+        copyright="© 2024 Nabız Haber Portalı. Tüm hakları saklıdır."
         links={[
           { label: 'Hakkımızda' },
           { label: 'İletişim' },

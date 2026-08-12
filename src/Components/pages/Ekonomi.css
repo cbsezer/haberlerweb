@@ -296,7 +296,16 @@
 .economy-footer h2 {
   font-family: var(--font-serif);
   font-size: var(--text-widget-title);
-  margin: 0;
+  margin: 0 0 6px;
+}
+
+.economy-footer .site-footer-tagline {
+  color: var(--color-brand);
+  display: block;
+  font-size: var(--text-caption);
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .economy-footer nav {

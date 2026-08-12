@@ -414,7 +414,17 @@
 .detail-footer h2 {
   font-family: var(--font-serif);
   font-size: var(--text-footer-title);
-  margin: 0 0 16px;
+  margin: 0 0 6px;
+}
+
+.detail-footer .site-footer-tagline {
+  color: var(--color-brand);
+  display: block;
+  font-size: var(--text-caption);
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
 .detail-footer p {

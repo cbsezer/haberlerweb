@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 
 function SiteFooter({
   className,
-  title = 'HBR NEWS',
+  title = 'Nabız',
+  tagline = 'Haberin Nabzı',
   description,
   links = [],
   copyright,
@@ -12,6 +13,7 @@ function SiteFooter({
     <footer className={className}>
       <div>
         <h2>{title}</h2>
+        {tagline && <span className="site-footer-tagline">{tagline}</span>}
         {description && <p>{description}</p>}
       </div>
       {links.length > 0 && (

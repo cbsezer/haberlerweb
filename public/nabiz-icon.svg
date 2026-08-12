@@ -1,0 +1,8 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Nabız İkon</title>
+  <desc id="desc">Nabız haber uygulaması ikonu.</desc>
+  <rect width="192" height="192" rx="42" fill="#111111"/>
+  <path d="M43 112H68L81 58L103 138L121 92H149" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M142 72L162 52" stroke="#D00210" stroke-width="12" stroke-linecap="round"/>
+  <path d="M159 38C181 59 181 101 159 122" stroke="#D00210" stroke-width="10" stroke-linecap="round"/>
+</svg>
